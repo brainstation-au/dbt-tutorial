@@ -1,7 +1,8 @@
 version: '3.9'
 services:
   sh:
-    image: xemuliam/dbt:bigquery
+    image: ghcr.io/brainstation-au/dbt-bigquery:main
+    # build: .
     volumes:
       - $HOME/.dbt:/root/.dbt
       - $HOME/.gcp:/root/.gcp
