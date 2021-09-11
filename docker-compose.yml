@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  sh:
+    image: xemuliam/dbt:bigquery
+    volumes:
+      - $HOME/.dbt:/root/.dbt
+      - $HOME/.gcp:/root/.gcp
+      - .:/opt/code
+    working_dir: /opt/code
+    command: bash
