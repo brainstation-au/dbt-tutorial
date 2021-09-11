@@ -1,11 +1,14 @@
 version: '3.9'
 services:
-  sh:
+  sh: &base
     image: ghcr.io/brainstation-au/dbt-bigquery:main
-    # build: .
     volumes:
       - $HOME/.dbt:/root/.dbt
       - $HOME/.gcp:/root/.gcp
       - .:/opt/code
     working_dir: /opt/code
     command: bash
+
+  dbt-run:
+    <<: *base
+    command: dbt run
