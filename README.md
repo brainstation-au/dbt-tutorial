@@ -5,7 +5,6 @@ Welcome to your new dbt project!
 This project has been created following the [getting started](https://docs.getdbt.com/tutorial/setting-up) instructions. It includes creations of credentials to execute the models in bigquery.
 
 This project assumes you have created your gcp credentials following the above instructions and saved the JSON file in `$HOME/.gcp/`. The docker compose makes that credentials available within the container instance.
-https://github.com/brainstation-au/dbt-tutorial/blob/3f38a9bc685bf5cbe01b118abb0f354d8c446e0f/docker-compose.yml#L7
 
 ### Setting up profile
 
